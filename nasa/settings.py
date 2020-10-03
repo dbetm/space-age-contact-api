@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'dnm9-4s1+f%(n4&3!k5&^djpny22=af6$#kh^g26d0)&2!s_yy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['space-age-contact.herokuapp.com']
 
 
 # Application definition
