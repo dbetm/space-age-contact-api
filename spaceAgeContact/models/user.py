@@ -8,6 +8,7 @@ class User(models.Model):
     profile_pic = models.ImageField(blank=True)
     name = models.CharField(max_length=200)
     birthdate = models.DateField()
+    email = models.CharField(max_length=100)
     country = CountryField()
     education = models.ManyToManyField('School', related_name='students', blank=True)
     work = models.ManyToManyField('Job', related_name='workers', blank=True)
