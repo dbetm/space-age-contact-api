@@ -9,7 +9,7 @@ class Game(models.Model):
     total_space_dust = models.IntegerField()
     duration = models.IntegerField()
     num_correct_answers = models.IntegerField()
-    players = models.ManyToManyField(User)
+    players = models.ManyToManyField('User', related_name='player')
 
     def __str__(self):
         return self.title

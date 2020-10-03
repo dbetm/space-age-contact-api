@@ -9,7 +9,10 @@ autopep8 = "*"
 [packages]
 django = "*"
 django-countries = "*"
+djangorestframework = "==3.11.1"
 pillow = "*"
+django-cors-headers = "*"
+drf-yasg = "*"
 
 [requires]
 python_version = "3.8"
