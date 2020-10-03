@@ -46,7 +46,7 @@ schema_view = get_schema_view(
    openapi.Info(
       title="Space Age Contact - API",
       default_version='v1',
-      description="API to admin Space Age Contact",
+      description="API to manage space age contact services",
       terms_of_service="",
       contact=openapi.Contact(email="support@mail.com"),
       license=openapi.License(name="BSD License"),
