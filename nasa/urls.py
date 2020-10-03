@@ -44,9 +44,9 @@ router.register(r'api/jobs', JobViewSet, basename='jobs')
 
 schema_view = get_schema_view(
    openapi.Info(
-      title="GO Control de Accesos - API",
+      title="Space Age Contact - API",
       default_version='v1',
-      description="API para administrar accesos residenciales",
+      description="API to admin Space Age Contact",
       terms_of_service="",
       contact=openapi.Contact(email="support@mail.com"),
       license=openapi.License(name="BSD License"),
