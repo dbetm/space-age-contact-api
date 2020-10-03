@@ -13,6 +13,7 @@ djangorestframework = "==3.11.1"
 pillow = "*"
 django-cors-headers = "*"
 drf-yasg = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.8"
