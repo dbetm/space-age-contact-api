@@ -136,7 +136,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images/')
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
-STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = 'AKIA2YVEVRUJILUTNP52'
 AWS_SECRET_ACCESS_KEY = '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'
