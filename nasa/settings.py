@@ -136,8 +136,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images/')
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_ACCESS_KEY_ID = 'AKIA2YVEVRUJILUTNP52 '
+AWS_ACCESS_KEY_ID = 'AKIA2YVEVRUJILUTNP52'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_STORAGE_BUCKET_NAME = 'space-app-nasa'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
