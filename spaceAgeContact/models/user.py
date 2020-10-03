@@ -1,4 +1,5 @@
 from django.db import models
+from django import forms
 from django_countries.fields import CountryField
 from .school import School
 from .job import Job
@@ -9,6 +10,7 @@ class User(models.Model):
     name = models.CharField(max_length=200)
     birthdate = models.DateField()
     email = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
     country = CountryField()
     education = models.ManyToManyField('School', related_name='students', blank=True)
     work = models.ManyToManyField('Job', related_name='workers', blank=True)
